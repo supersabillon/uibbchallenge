@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jsabillon/bbchallenge/issues"
   },
-  "homepage": "https://github.com/jsabillon/bbchallenge"
+  "homepage": "https://github.com/jsabillon/bbchallenge",
+  "dependencies": {
+    "express": "~4.11.2"
+  }
 }
