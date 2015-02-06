@@ -5,10 +5,8 @@ AWS.config.region = 'us-west-2';
 var app = express();
 
 app.get('/', function(req, res){
-	res.send('<h1>Joel Sabillon</h1>');
+	res.sendfile('./index.html');
 });
 
-
-var server = app.listen(80, function(){
-	console.log("Listening on port 80");
-});
+app.listen(80);
+console.log('Listening on port 80');
