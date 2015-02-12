@@ -10,11 +10,11 @@ module.exports = function(grunt) {
         jasmine: {
             all: {
                 src: [
-                    'public/javascripts/src/**/*.js',
+                    '*.js',
                 ],
                 options: {
-                    'vendor': 'public/javascripts/libs/**/*.js',
-                    'specs': 'public/javascripts/spec/**/*.js'
+                    'vendor': '*.js',
+                    'specs': '*.js'
                 }
             }
         }
