@@ -18,5 +18,9 @@
   "homepage": "https://github.com/jsabillon/bbchallenge",
   "dependencies": {
     "express": "~4.11.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.8.2"
   }
 }
