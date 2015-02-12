@@ -1,8 +1,14 @@
- language: node_js
- node_js:
-   - "0.10"
- addons:
-   code_climate:
+after_script: 
+- cat lcov.info | codeclimate
+deploy: 
+  access-key-id: AKIAI4MDL2IO2BWAZX4Q
+  secret-access-key: 
+    secure: PFWXqoaa9teP9mJmBbE9f6j2hlMcgBFkRziiz9jlToMIjRRubPaBWJawndK1hz+dHyp2l1RDyx9IMsUu93rqTb1Eb9wM+FN9IYDhfqOCP15AVprvGM3JAF/dRGrmD/PcGgwGnhU/98BJNrUMIHHSb9EYE0+zNf/fM5DOMN5cuJ0=
+  app-id: b53013fd-850a-4db8-98cf-0bf8febbbc19
+  provider: opsworks
+addons: 
+  code_climate: 
     repo_token: fbbe8b7b3050aeb3db91ed7b45dc2d1704b939ffe83457a25facd81040889b4a
- after_script:
-  - cat lcov.info | codeclimate
+language: node_js
+node_js: 
+- "0.10"
