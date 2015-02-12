@@ -6,3 +6,5 @@
  addons:
    code_climate:
     repo_token: fbbe8b7b3050aeb3db91ed7b45dc2d1704b939ffe83457a25facd81040889b4a
+ after_script:
+  - cat lcov.info | codeclimate
